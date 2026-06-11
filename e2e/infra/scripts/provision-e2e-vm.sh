@@ -61,9 +61,11 @@ done
 
 echo "==> Transferring code to VM..."
 GNUTAR=$(command -v gtar || command -v tar)
-"$GNUTAR" czf /tmp/repo.tar.gz \
+COPYFILE_DISABLE=1 "$GNUTAR" czf /tmp/repo.tar.gz \
 	--no-xattrs \
 	--exclude=.git \
+	--exclude='.DS_Store' \
+	--exclude='._*' \
 	--exclude=bin \
 	--exclude=dist \
 	--exclude=node_modules \
