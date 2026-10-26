@@ -1,5 +1,12 @@
 # AGENTS.md
 
+## Fork policy
+
+This is 519lab's fork; read [FORK.md](FORK.md) first. It contains no `.ee`
+(Enterprise-licensed) code: never add a `.ee` file or recover one from upstream
+or history. Branch from `develop` and open PRs against `develop`; `main` is
+promoted from `develop` and publishes images.
+
 ## After every code change
 
 Always run the following checks after modifying Go files:
