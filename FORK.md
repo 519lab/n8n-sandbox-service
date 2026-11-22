@@ -18,6 +18,10 @@ service version 1.11.0). It exists so that 519lab/n8n's CI and its
 - **Upstream's CI workflows.** They release to n8n-io's registries, npm and Helm
   repo, and run on n8n-io's infrastructure. They're replaced by `ci.yml` (format,
   vet, build, test) and `publish.yml`.
+- **Upstream's PR template and `CODEOWNERS`.** The template asked for n8n's Linear
+  tickets, and `CODEOWNERS` named upstream maintainers. Pull requests, issues, the
+  code of conduct, contributing and support now come from the 519lab
+  organization defaults in `519lab/.github`.
 
 Some docs (`docs/security-model.md`, `docs/configuration.md`) still describe the
 Firecracker runner; that runner is not part of this fork.
